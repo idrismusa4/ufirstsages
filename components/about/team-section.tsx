@@ -4,13 +4,13 @@ import { Card, CardContent } from "@/components/ui/card";
 const team = [
   {
     name: "John Smith",
-    role: "CEO & Founder",
-    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+    role: "Executive Director",
+    image: "/executive_director.jpg",
   },
   {
-    name: "Sarah Johnson",
-    role: "Head of Engineering",
-    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+    name: "Benjamin Olagunju",
+    role: "Chief Financial Officer",
+    image: "/CFO.jpg"
   },
   {
     name: "Michael Chen",
@@ -27,7 +27,7 @@ export function TeamSection() {
         <div className="grid md:grid-cols-3 gap-8">
           {team.map((member) => (
             <Card key={member.name} className="overflow-hidden">
-              <div className="relative h-64">
+              <div className="relative" style={{ aspectRatio: "4 / 3" }}>
                 <Image
                   src={member.image}
                   alt={member.name}
