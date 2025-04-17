@@ -3,7 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const team = [
   {
-    name: "John Smith",
+    name: "SWAT",
     role: "Executive Director",
     image: "/executive_director.jpg",
   },
@@ -13,9 +13,9 @@ const team = [
     image: "/CFO.jpg"
   },
   {
-    name: "Michael Chen",
+    name: "Engr. Shalom Adalumo",
     role: "Director of Operations",
-    image: "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+    image: "/DOO.jpg"
   }
 ];
 
@@ -27,12 +27,13 @@ export function TeamSection() {
         <div className="grid md:grid-cols-3 gap-8">
           {team.map((member) => (
             <Card key={member.name} className="overflow-hidden">
-              <div className="relative" style={{ aspectRatio: "4 / 3" }}>
+              <div className="relative w-full aspect-[4/3]">
                 <Image
                   src={member.image}
                   alt={member.name}
                   fill
                   className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 33vw"
                 />
               </div>
               <CardContent className="p-6 text-center">
