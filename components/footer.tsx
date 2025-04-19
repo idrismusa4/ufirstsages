@@ -66,12 +66,23 @@ export function Footer() {
             <ul className="space-y-2">
               <li className="flex items-center space-x-2 text-gray-400">
                 <MapPin className="h-4 w-4" />
-                <span>Abuja, Port Harcourt, USA</span>
+                <p>Abuja: Plot 411 JH Wariya Crescent, Life Camp Abuja.</p>
+              </li>
+              <li className="flex items-center space-x-2 text-gray-400">
+                <MapPin className="h-4 w-4" />
+                <p>USA: 3515 Warsaw Avenue, Cincinnati, OH 45205, USA</p>
+              </li>
+           
+              <li className="flex items-center space-x-2 text-gray-400">
+                <Phone className="h-4 w-4" />
+                <a href="tel:+2348050324241" className="hover:text-green-500">
+                  +234-805-032-4241 (Abuja)
+                </a>
               </li>
               <li className="flex items-center space-x-2 text-gray-400">
                 <Phone className="h-4 w-4" />
-                <a href="tel:+1234567890" className="hover:text-green-500">
-                  +1 (234) 567-890
+                <a href="tel:+18599076220" className="hover:text-green-500">
+                  +1-(859)-907-6220 (USA)
                 </a>
               </li>
               <li className="flex items-center space-x-2 text-gray-400">

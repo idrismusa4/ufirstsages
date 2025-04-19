@@ -2,13 +2,14 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import {
   Car,
   Calendar,
   Fuel,
   Gauge,
   ChevronLeft,
-  ChevronRight
+  ChevronRight,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -672,7 +673,12 @@ export default function InventoryPage() {
                 <Button variant="outline" onClick={() => setSelectedVehicle(null)}>
                   Close
                 </Button>
-                <Button>Contact Sales</Button>
+                
+                <Button asChild>
+                  
+                  <Link href={"https://wa.link/emizp3"} target="_blank">Contact Sales</Link>
+                </Button>
+               
               </div>
             </div>
           )}
